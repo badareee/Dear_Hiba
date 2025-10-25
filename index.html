@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Hiba</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,8 +13,8 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1a0a1f 0%, #3d1f47 50%, #5c2e5d 100%);
             min-height: 100vh;
             overflow-x: hidden;
         }
@@ -32,9 +33,9 @@
 
         .particle {
             position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(255, 255, 255, 0.5);
+            width: 3px;
+            height: 3px;
+            background: rgba(255, 182, 193, 0.6);
             border-radius: 50%;
             animation: float 30s infinite linear;
         }
@@ -64,7 +65,7 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(135deg, #ffd1dc 0%, #e0c3fc 50%, #8ec5fc 100%);
+            background: linear-gradient(135deg, #2a1235 0%, #4a2c54 50%, #6b3d6b 100%);
             z-index: 1000;
             justify-content: center;
             align-items: center;
@@ -72,11 +73,12 @@
         }
 
         .countdown-title {
-            color: #4a148c;
-            font-size: 2.5rem;
+            color: #ffb3d9;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
             margin-bottom: 3rem;
             text-align: center;
-            font-weight: 300;
+            font-weight: 500;
             letter-spacing: 2px;
         }
 
@@ -86,8 +88,9 @@
         }
 
         .time-block {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 179, 217, 0.15);
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 179, 217, 0.3);
             border-radius: 15px;
             padding: 2rem;
             text-align: center;
@@ -96,18 +99,19 @@
 
         .time-number {
             font-size: 3rem;
-            color: #4a148c;
-            font-weight: 400;
+            color: #ffb3d9;
+            font-weight: 500;
             display: block;
             margin-bottom: 0.5rem;
+            font-family: 'Poppins', sans-serif;
         }
 
         .time-label {
-            color: #7b1fa2;
+            color: #ff99cc;
             font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            font-weight: 300;
+            font-weight: 400;
         }
 
         /* Login Section */
@@ -118,15 +122,16 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(135deg, #ffd1dc 0%, #e0c3fc 50%, #8ec5fc 100%);
+            background: linear-gradient(135deg, #2a1235 0%, #4a2c54 50%, #6b3d6b 100%);
             z-index: 999;
             justify-content: center;
             align-items: center;
         }
 
         .login-box {
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 179, 217, 0.1);
             backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 179, 217, 0.3);
             border-radius: 20px;
             padding: 3rem;
             width: 90%;
@@ -134,11 +139,12 @@
         }
 
         .login-title {
-            color: #4a148c;
-            font-size: 2rem;
+            color: #ffb3d9;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
             text-align: center;
             margin-bottom: 2rem;
-            font-weight: 300;
+            font-weight: 500;
             letter-spacing: 1px;
         }
 
@@ -149,45 +155,47 @@
         .input-group input {
             width: 100%;
             padding: 1rem;
-            background: rgba(255, 255, 255, 0.5);
-            border: 1px solid rgba(186, 85, 211, 0.2);
+            background: rgba(255, 179, 217, 0.1);
+            border: 1px solid rgba(255, 179, 217, 0.3);
             border-radius: 10px;
-            color: #4a148c;
+            color: #ffb3d9;
             font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
             transition: all 0.3s;
         }
 
         .input-group input::placeholder {
-            color: rgba(123, 31, 162, 0.5);
+            color: rgba(255, 179, 217, 0.5);
         }
 
         .input-group input:focus {
             outline: none;
-            background: rgba(255, 255, 255, 0.7);
-            border-color: #ba55d3;
+            background: rgba(255, 179, 217, 0.15);
+            border-color: #ff69b4;
         }
 
         .login-btn {
             width: 100%;
             padding: 1rem;
-            background: linear-gradient(45deg, #ff69b4, #ba55d3);
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
             border: none;
             border-radius: 10px;
             color: white;
             font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;
             cursor: pointer;
             transition: all 0.3s;
-            font-weight: 300;
+            font-weight: 400;
             letter-spacing: 1px;
         }
 
         .login-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(186, 85, 211, 0.3);
+            box-shadow: 0 10px 25px rgba(255, 20, 147, 0.4);
         }
 
         .error-message {
-            color: #d32f2f;
+            color: #ff6b9d;
             text-align: center;
             margin-top: 1rem;
             display: none;
@@ -202,7 +210,7 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(135deg, #ffd1dc 0%, #e0c3fc 50%, #8ec5fc 100%);
+            background: linear-gradient(135deg, #2a1235 0%, #4a2c54 50%, #6b3d6b 100%);
             z-index: 998;
             justify-content: center;
             align-items: center;
@@ -250,10 +258,11 @@
         }
 
         .loader-text {
-            color: #4a148c;
+            color: #ffb3d9;
             font-size: 1.5rem;
             text-align: center;
-            font-weight: 300;
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
         }
 
         /* Main Content */
@@ -272,15 +281,16 @@
             align-items: center;
             flex-direction: column;
             position: relative;
-            background: linear-gradient(135deg, #ffd1dc 0%, #e0c3fc 50%, #8ec5fc 100%);
+            background: linear-gradient(135deg, #2a1235 0%, #4a2c54 50%, #6b3d6b 100%);
         }
 
         .birthday-title {
-            font-size: 4rem;
-            color: #4a148c;
+            font-size: 4.5rem;
+            color: #ffb3d9;
             text-align: center;
             margin-bottom: 2rem;
-            font-weight: 300;
+            font-weight: 500;
+            font-family: 'Playfair Display', serif;
             letter-spacing: 3px;
             opacity: 0;
             animation: fadeIn 1.5s forwards;
@@ -293,33 +303,35 @@
         }
 
         .birthday-subtitle {
-            font-size: 1.5rem;
-            color: #7b1fa2;
+            font-size: 1.6rem;
+            color: #ff99cc;
             text-align: center;
             margin-bottom: 3rem;
             font-weight: 300;
+            font-family: 'Poppins', sans-serif;
             opacity: 0;
             animation: fadeIn 1.5s forwards 0.3s;
         }
 
         .reveal-btn {
             padding: 1.2rem 3rem;
-            background: linear-gradient(45deg, #ff69b4, #ba55d3);
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
             border: none;
             border-radius: 50px;
             color: white;
             font-size: 1.2rem;
+            font-family: 'Poppins', sans-serif;
             cursor: pointer;
             opacity: 0;
             animation: fadeIn 1.5s forwards 0.6s;
             transition: all 0.3s;
-            font-weight: 300;
+            font-weight: 400;
             letter-spacing: 1px;
         }
 
         .reveal-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(186, 85, 211, 0.3);
+            box-shadow: 0 10px 25px rgba(255, 20, 147, 0.4);
         }
 
         /* Wishes Sections */
@@ -341,10 +353,10 @@
             right: 0;
             bottom: 0;
             background: linear-gradient(135deg, 
-                rgba(255, 209, 220, 0.85) 0%, 
-                rgba(224, 195, 252, 0.85) 50%, 
-                rgba(142, 197, 252, 0.85) 100%);
-            backdrop-filter: blur(5px);
+                rgba(42, 18, 53, 0.75) 0%, 
+                rgba(74, 44, 84, 0.75) 50%, 
+                rgba(107, 61, 107, 0.75) 100%);
+            backdrop-filter: blur(2px);
             z-index: 1;
         }
 
@@ -354,60 +366,68 @@
             max-width: 800px;
             margin: 0 auto;
             text-align: center;
-            color: #4a148c;
+            color: #ffb3d9;
         }
 
         .wishes-title {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 2rem;
-            font-weight: 300;
+            font-weight: 500;
+            font-family: 'Playfair Display', serif;
             letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .wishes-text {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             line-height: 2;
             margin-bottom: 2rem;
             font-weight: 300;
+            font-family: 'Poppins', sans-serif;
+            color: #ffd1e8;
         }
 
         .special-message {
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 179, 217, 0.2);
             backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 179, 217, 0.4);
             border-radius: 20px;
             padding: 2.5rem;
             margin-top: 3rem;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             line-height: 1.9;
             font-weight: 300;
+            font-family: 'Poppins', sans-serif;
+            color: #ffd1e8;
         }
 
         .next-btn {
             margin-top: 2.5rem;
             padding: 1rem 2.5rem;
-            background: linear-gradient(45deg, #ff69b4, #ba55d3);
+            background: linear-gradient(45deg, #ff69b4, #ff1493);
             border: none;
             border-radius: 50px;
             color: white;
             font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;
             cursor: pointer;
             transition: all 0.3s;
-            font-weight: 300;
+            font-weight: 400;
             letter-spacing: 1px;
         }
 
         .next-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(186, 85, 211, 0.3);
+            box-shadow: 0 10px 25px rgba(255, 20, 147, 0.4);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .birthday-title {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
             }
             .birthday-subtitle {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
             .countdown {
                 flex-wrap: wrap;
@@ -417,13 +437,13 @@
                 min-width: 140px;
             }
             .wishes-title {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
             .wishes-text {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
             }
             .special-message {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
                 padding: 2rem;
             }
         }
@@ -484,8 +504,8 @@
         <!-- Birthday Section -->
         <div class="birthday-section" id="birthdaySection">
             <h1 class="birthday-title">Happy Birthday<br>Hiba</h1>
-            <p class="birthday-subtitle">May your day be filled with joy</p>
-            <button class="reveal-btn" onclick="revealSurprise()">View Wishes</button>
+            <p class="birthday-subtitle">May Allah Pak keep uuh always Smiling🙂</p>
+            <button class="reveal-btn" onclick="revealSurprise()">Punch Meeh</button>
         </div>
 
         <!-- Wishes Section 1 -->
@@ -546,7 +566,7 @@
             const currentMonth = today.getMonth() + 1;
             const currentDate = today.getDate();
             
-            if (currentMonth === 10 && currentDate === 25) {
+            if (currentMonth === 10 && currentDate === 26) {
                 document.getElementById('loginContainer').style.display = 'flex';
                 document.getElementById('countdownContainer').style.display = 'none';
             } else {
