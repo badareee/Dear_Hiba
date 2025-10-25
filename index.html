@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Hiba! 🎉</title>
+    <title>Happy Birthday Hiba</title>
     <style>
         * {
             margin: 0;
@@ -13,13 +13,12 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 50%, #6c5b7b 100%);
+            background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
             min-height: 100vh;
             overflow-x: hidden;
-            position: relative;
         }
 
-        /* Animated background particles */
+        /* Minimal particles */
         .particles {
             position: fixed;
             top: 0;
@@ -33,16 +32,16 @@
 
         .particle {
             position: absolute;
-            width: 8px;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.6);
+            width: 4px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.5);
             border-radius: 50%;
-            animation: float 20s infinite linear;
+            animation: float 30s infinite linear;
         }
 
         @keyframes float {
             from {
-                transform: translateY(100vh) translateX(0) rotate(0deg);
+                transform: translateY(100vh);
                 opacity: 0;
             }
             10% {
@@ -52,12 +51,12 @@
                 opacity: 1;
             }
             to {
-                transform: translateY(-100vh) translateX(150px) rotate(360deg);
+                transform: translateY(-100vh);
                 opacity: 0;
             }
         }
 
-        /* Countdown Timer Section */
+        /* Countdown Timer */
         .countdown-container {
             display: none;
             position: fixed;
@@ -65,7 +64,7 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 50%, #6c5b7b 100%);
+            background: linear-gradient(135deg, #ffd1dc 0%, #e0c3fc 50%, #8ec5fc 100%);
             z-index: 1000;
             justify-content: center;
             align-items: center;
@@ -73,56 +72,41 @@
         }
 
         .countdown-title {
-            color: white;
-            font-size: 2.8rem;
+            color: #4a148c;
+            font-size: 2.5rem;
             margin-bottom: 3rem;
             text-align: center;
-            letter-spacing: 3px;
-            animation: glow 2s ease-in-out infinite alternate;
             font-weight: 300;
-        }
-
-        @keyframes glow {
-            from { text-shadow: 0 0 20px rgba(255,255,255,0.8); }
-            to { text-shadow: 0 0 40px rgba(255,255,255,1), 0 0 60px rgba(255,182,193,0.8); }
+            letter-spacing: 2px;
         }
 
         .countdown {
             display: flex;
             gap: 2rem;
-            z-index: 10;
         }
 
         .time-block {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(15px);
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            border-radius: 20px;
-            padding: 2.5rem 2rem;
+            background: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
             text-align: center;
-            min-width: 130px;
-            animation: pulse 2s infinite;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            min-width: 120px;
         }
 
         .time-number {
-            font-size: 3.5rem;
-            color: white;
-            font-weight: 600;
+            font-size: 3rem;
+            color: #4a148c;
+            font-weight: 400;
             display: block;
             margin-bottom: 0.5rem;
         }
 
         .time-label {
-            color: rgba(255, 255, 255, 0.95);
-            font-size: 1rem;
+            color: #7b1fa2;
+            font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             font-weight: 300;
         }
 
@@ -134,102 +118,83 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 50%, #6c5b7b 100%);
+            background: linear-gradient(135deg, #ffd1dc 0%, #e0c3fc 50%, #8ec5fc 100%);
             z-index: 999;
             justify-content: center;
             align-items: center;
         }
 
         .login-box {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(30px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-radius: 30px;
-            padding: 3.5rem;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 3rem;
             width: 90%;
-            max-width: 420px;
-            animation: slideDown 1s ease-out;
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
+            max-width: 400px;
         }
 
         .login-title {
-            color: white;
-            font-size: 2.2rem;
+            color: #4a148c;
+            font-size: 2rem;
             text-align: center;
-            margin-bottom: 2.5rem;
-            letter-spacing: 2px;
+            margin-bottom: 2rem;
             font-weight: 300;
+            letter-spacing: 1px;
         }
 
         .input-group {
-            margin-bottom: 1.8rem;
+            margin-bottom: 1.5rem;
         }
 
         .input-group input {
             width: 100%;
-            padding: 1.2rem;
-            background: rgba(255, 255, 255, 0.2);
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            border-radius: 15px;
-            color: white;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid rgba(186, 85, 211, 0.2);
+            border-radius: 10px;
+            color: #4a148c;
             font-size: 1rem;
             transition: all 0.3s;
         }
 
         .input-group input::placeholder {
-            color: rgba(255, 255, 255, 0.8);
+            color: rgba(123, 31, 162, 0.5);
         }
 
         .input-group input:focus {
             outline: none;
-            background: rgba(255, 255, 255, 0.25);
-            border-color: white;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.7);
+            border-color: #ba55d3;
         }
 
         .login-btn {
             width: 100%;
-            padding: 1.2rem;
-            background: linear-gradient(45deg, #ff758c 0%, #ff7eb3 100%);
+            padding: 1rem;
+            background: linear-gradient(45deg, #ff69b4, #ba55d3);
             border: none;
-            border-radius: 15px;
+            border-radius: 10px;
             color: white;
-            font-size: 1.2rem;
-            font-weight: 500;
+            font-size: 1.1rem;
             cursor: pointer;
             transition: all 0.3s;
-            letter-spacing: 2px;
-            box-shadow: 0 8px 20px rgba(255, 117, 140, 0.4);
+            font-weight: 300;
+            letter-spacing: 1px;
         }
 
         .login-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px rgba(255, 117, 140, 0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(186, 85, 211, 0.3);
         }
 
         .error-message {
-            color: #fff;
+            color: #d32f2f;
             text-align: center;
             margin-top: 1rem;
             display: none;
             font-size: 0.9rem;
-            background: rgba(255, 0, 0, 0.3);
-            padding: 0.8rem;
-            border-radius: 10px;
         }
 
-        /* Enhanced Loader Section */
+        /* Loader Section */
         .loader-container {
             display: none;
             position: fixed;
@@ -237,25 +202,17 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: linear-gradient(45deg, #ff6b9d 0%, #c06c84 25%, #6c5b7b 50%, #ff758c 75%, #ff6b9d 100%);
-            background-size: 400% 400%;
-            animation: gradientShift 5s ease infinite;
+            background: linear-gradient(135deg, #ffd1dc 0%, #e0c3fc 50%, #8ec5fc 100%);
             z-index: 998;
             justify-content: center;
             align-items: center;
             flex-direction: column;
         }
 
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
         .loader-animation {
             position: relative;
-            width: 250px;
-            height: 250px;
+            width: 80px;
+            height: 80px;
             margin-bottom: 2rem;
         }
 
@@ -263,79 +220,40 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            width: 80px;
-            height: 72px;
+            width: 60px;
+            height: 54px;
             transform: translate(-50%, -50%);
-            animation: spinHeart 3s linear infinite;
+            animation: spinHeart 2s linear infinite;
         }
 
         .spinning-heart:before,
         .spinning-heart:after {
             content: '';
             position: absolute;
-            width: 40px;
-            height: 64px;
-            background: linear-gradient(135deg, #ff758c, #ffb6c1);
+            width: 30px;
+            height: 48px;
+            background: #ff69b4;
             border-radius: 50px 50px 0 0;
             transform: rotate(-45deg);
             transform-origin: 0 100%;
-            box-shadow: 0 0 30px rgba(255, 117, 140, 0.8);
         }
 
         .spinning-heart:after {
-            left: 40px;
+            left: 30px;
             transform: rotate(45deg);
             transform-origin: 100% 100%;
         }
 
         @keyframes spinHeart {
-            0% { transform: translate(-50%, -50%) rotate(0deg) scale(1); }
-            25% { transform: translate(-50%, -50%) rotate(90deg) scale(1.3); }
-            50% { transform: translate(-50%, -50%) rotate(180deg) scale(1); }
-            75% { transform: translate(-50%, -50%) rotate(270deg) scale(1.3); }
-            100% { transform: translate(-50%, -50%) rotate(360deg) scale(1); }
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
         }
 
         .loader-text {
-            color: white;
-            font-size: 2rem;
-            letter-spacing: 2px;
+            color: #4a148c;
+            font-size: 1.5rem;
             text-align: center;
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-shadow: 0 0 30px rgba(255,255,255,0.6);
-            animation: textGlow 2s ease-in-out infinite alternate;
             font-weight: 300;
-        }
-
-        @keyframes textGlow {
-            from { text-shadow: 0 0 20px rgba(255,255,255,0.6); }
-            to { text-shadow: 0 0 40px rgba(255,255,255,1), 0 0 60px rgba(255,182,193,0.8); }
-        }
-
-        .progress-bar {
-            width: 350px;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.25);
-            border-radius: 15px;
-            margin-top: 2.5rem;
-            overflow: hidden;
-        }
-
-        .progress-fill {
-            height: 100%;
-            background: linear-gradient(90deg, #ff758c, #ff7eb3, #ffb6c1);
-            border-radius: 15px;
-            width: 0%;
-            animation: progressAnimation 12s linear forwards;
-            box-shadow: 0 0 25px rgba(255, 117, 140, 0.8);
-        }
-
-        @keyframes progressAnimation {
-            0% { width: 0%; }
-            100% { width: 100%; }
         }
 
         /* Main Content */
@@ -346,7 +264,7 @@
             z-index: 10;
         }
 
-        /* First Section - Happy Birthday */
+        /* Birthday Section */
         .birthday-section {
             height: 100vh;
             display: flex;
@@ -354,172 +272,170 @@
             align-items: center;
             flex-direction: column;
             position: relative;
-            background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 50%, #6c5b7b 100%);
+            background: linear-gradient(135deg, #ffd1dc 0%, #e0c3fc 50%, #8ec5fc 100%);
         }
 
         .birthday-title {
-            font-size: 5rem;
-            color: white;
+            font-size: 4rem;
+            color: #4a148c;
             text-align: center;
-            margin-bottom: 2.5rem;
-            opacity: 0;
-            animation: titleReveal 2s forwards;
-            letter-spacing: 5px;
-            text-shadow: 0 0 40px rgba(255,255,255,0.6);
+            margin-bottom: 2rem;
             font-weight: 300;
-            line-height: 1.3;
+            letter-spacing: 3px;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards;
         }
 
-        @keyframes titleReveal {
+        @keyframes fadeIn {
             to {
                 opacity: 1;
-                transform: translateY(-30px);
             }
         }
 
         .birthday-subtitle {
-            font-size: 1.8rem;
-            color: rgba(255, 255, 255, 0.95);
+            font-size: 1.5rem;
+            color: #7b1fa2;
             text-align: center;
             margin-bottom: 3rem;
-            opacity: 0;
-            animation: subtitleReveal 2s forwards 0.5s;
-            letter-spacing: 2px;
             font-weight: 300;
-        }
-
-        @keyframes subtitleReveal {
-            to {
-                opacity: 1;
-            }
+            opacity: 0;
+            animation: fadeIn 1.5s forwards 0.3s;
         }
 
         .reveal-btn {
-            padding: 1.5rem 4rem;
-            background: linear-gradient(45deg, #ff758c 0%, #ff7eb3 100%);
+            padding: 1.2rem 3rem;
+            background: linear-gradient(45deg, #ff69b4, #ba55d3);
             border: none;
             border-radius: 50px;
             color: white;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             cursor: pointer;
             opacity: 0;
-            animation: buttonReveal 2s forwards 1s;
+            animation: fadeIn 1.5s forwards 0.6s;
             transition: all 0.3s;
-            letter-spacing: 2px;
-            box-shadow: 0 15px 40px rgba(255, 117, 140, 0.4);
-            font-weight: 400;
-        }
-
-        @keyframes buttonReveal {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            font-weight: 300;
+            letter-spacing: 1px;
         }
 
         .reveal-btn:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 20px 50px rgba(255, 117, 140, 0.6);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(186, 85, 211, 0.3);
         }
 
-        /* Wishes Section */
+        /* Wishes Sections */
         .wishes-section {
             display: none;
             min-height: 100vh;
             position: relative;
-            padding: 6rem 2rem;
-            background: linear-gradient(135deg, rgba(255, 107, 157, 0.9) 0%, rgba(192, 108, 132, 0.9) 50%, rgba(108, 91, 123, 0.9) 100%);
-            backdrop-filter: blur(10px);
+            padding: 5rem 2rem;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .wishes-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                rgba(255, 209, 220, 0.85) 0%, 
+                rgba(224, 195, 252, 0.85) 50%, 
+                rgba(142, 197, 252, 0.85) 100%);
+            backdrop-filter: blur(5px);
+            z-index: 1;
         }
 
         .wishes-content {
             position: relative;
             z-index: 2;
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
             text-align: center;
-            color: white;
-            opacity: 0;
-            animation: wishesAppear 1.5s forwards;
-        }
-
-        @keyframes wishesAppear {
-            to {
-                opacity: 1;
-                transform: translateY(-30px);
-            }
+            color: #4a148c;
         }
 
         .wishes-title {
-            font-size: 3.5rem;
-            margin-bottom: 3rem;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-            letter-spacing: 4px;
+            font-size: 3rem;
+            margin-bottom: 2rem;
             font-weight: 300;
+            letter-spacing: 2px;
         }
 
         .wishes-text {
-            font-size: 1.8rem;
-            line-height: 2.2;
-            margin-bottom: 3rem;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            font-size: 1.5rem;
+            line-height: 2;
+            margin-bottom: 2rem;
             font-weight: 300;
         }
 
         .special-message {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(20px);
-            border: 2px solid rgba(255, 255, 255, 0.4);
-            border-radius: 30px;
-            padding: 3rem;
-            margin-top: 4rem;
-            font-size: 1.5rem;
-            line-height: 2;
-            animation: floatMessage 4s infinite ease-in-out;
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-top: 3rem;
+            font-size: 1.3rem;
+            line-height: 1.9;
             font-weight: 300;
         }
 
-        @keyframes floatMessage {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
+        .next-btn {
+            margin-top: 2.5rem;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(45deg, #ff69b4, #ba55d3);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .next-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(186, 85, 211, 0.3);
         }
 
         /* Responsive */
         @media (max-width: 768px) {
             .birthday-title {
-                font-size: 2.8rem;
+                font-size: 2.5rem;
             }
             .birthday-subtitle {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
             .countdown {
                 flex-wrap: wrap;
                 gap: 1rem;
             }
             .time-block {
-                min-width: 150px;
+                min-width: 140px;
             }
             .wishes-title {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
             .wishes-text {
-                font-size: 1.3rem;
+                font-size: 1.2rem;
             }
             .special-message {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 padding: 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Animated Particles Background -->
+    <!-- Minimal Particles -->
     <div class="particles" id="particles"></div>
 
     <!-- Countdown Timer -->
     <div class="countdown-container" id="countdownContainer">
-        <h1 class="countdown-title">Something Special Is Coming For Hiba...</h1>
+        <h1 class="countdown-title">Something Special Is Coming...</h1>
         <div class="countdown" id="countdown">
             <div class="time-block">
                 <span class="time-number" id="days">0</span>
@@ -543,7 +459,7 @@
     <!-- Login Form -->
     <div class="login-container" id="loginContainer">
         <div class="login-box">
-            <h2 class="login-title">Welcome Hiba! ✨</h2>
+            <h2 class="login-title">Welcome</h2>
             <div class="input-group">
                 <input type="text" id="username" placeholder="Enter your name" autocomplete="off">
             </div>
@@ -551,7 +467,7 @@
                 <input type="password" id="password" placeholder="Enter password" autocomplete="off">
             </div>
             <button class="login-btn" onclick="handleLogin()">Enter</button>
-            <div class="error-message" id="errorMessage">Oops! Please check your credentials and try again.</div>
+            <div class="error-message" id="errorMessage">Please check your credentials</div>
         </div>
     </div>
 
@@ -560,53 +476,66 @@
         <div class="loader-animation">
             <div class="spinning-heart"></div>
         </div>
-        <div class="loader-text" id="loaderText">Preparing something special...</div>
-        <div class="progress-bar">
-            <div class="progress-fill"></div>
-        </div>
+        <div class="loader-text" id="loaderText">Loading...</div>
     </div>
 
     <!-- Main Content -->
     <div class="main-container" id="mainContainer">
         <!-- Birthday Section -->
         <div class="birthday-section" id="birthdaySection">
-            <h1 class="birthday-title">Happy Birthday<br>Hiba! 🎉</h1>
-            <p class="birthday-subtitle">Wishing you a day filled with joy and happiness!</p>
-            <button class="reveal-btn" onclick="revealSurprise()">See Your Birthday Wishes</button>
+            <h1 class="birthday-title">Happy Birthday<br>Hiba</h1>
+            <p class="birthday-subtitle">May your day be filled with joy</p>
+            <button class="reveal-btn" onclick="revealSurprise()">View Wishes</button>
         </div>
 
-        <!-- Wishes Section -->
-        <div class="wishes-section" id="wishesSection">
+        <!-- Wishes Section 1 -->
+        <div class="wishes-section" id="wishesSection1" style="background-image: url('pic1.jpg');">
             <div class="wishes-content">
-                <h2 class="wishes-title">Dear Hiba ✨</h2>
+                <h2 class="wishes-title">Dear Hiba</h2>
                 <p class="wishes-text">
-                    Happy Birthday! Even though we've only known each other for a short time,
-                    I wanted to make this day special for you. May this year bring you endless joy,
-                    success, and beautiful moments to cherish.
+                    Happy Birthday! Even though we've just started getting to know each other,
+                    I wanted to make this day special for you. May this year bring you endless joy
+                    and beautiful moments to cherish.
                 </p>
                 <div class="special-message">
-                    On this special day, I wish you all the happiness in the world! 
-                    May every dream you have come true and may your journey ahead be 
-                    filled with wonderful surprises and amazing experiences. 
-                    Here's to new friendships and great memories ahead! 🎂🎈
+                    May all your dreams come true and may you always find reasons to smile.
+                    Here's to new friendships and great memories ahead! 🌸
+                </div>
+                <button class="next-btn" onclick="showNextWish()">Continue</button>
+            </div>
+        </div>
+
+        <!-- Wishes Section 2 -->
+        <div class="wishes-section" id="wishesSection2" style="background-image: url('pic2.jpg');">
+            <div class="wishes-content">
+                <h2 class="wishes-title">A Special Message</h2>
+                <p class="wishes-text">
+                    Life brings people together for a reason, and meeting you has been one of those
+                    beautiful surprises. Here's to amazing adventures ahead!
+                </p>
+                <div class="special-message">
+                    Wishing you endless happiness, success in everything you do,
+                    and beautiful moments that make you smile.
+                    <br><br>
+                    Happy Birthday! 🎂
                     <br><br>
                     Best wishes,<br>
-                    Badar 😊
+                    Badar
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        // Create animated particles
+        // Minimal particles
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
-            for (let i = 0; i < 60; i++) {
+            for (let i = 0; i < 30; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
                 particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 20 + 's';
-                particle.style.animationDuration = (20 + Math.random() * 10) + 's';
+                particle.style.animationDelay = Math.random() * 30 + 's';
+                particle.style.animationDuration = (30 + Math.random() * 20) + 's';
                 particlesContainer.appendChild(particle);
             }
         }
@@ -631,7 +560,7 @@
         function startCountdown() {
             const targetDate = new Date();
             targetDate.setFullYear(targetDate.getFullYear());
-            targetDate.setMonth(9); // October (0-indexed)
+            targetDate.setMonth(9);
             targetDate.setDate(27);
             targetDate.setHours(0, 0, 0, 0);
 
@@ -664,28 +593,6 @@
             setInterval(updateCountdown, 1000);
         }
 
-        // Loader with changing messages
-        function showLoader() {
-            const messages = [
-                'Preparing something special...',
-                'Almost there...',
-                'Just a moment...',
-                'Get ready! 🎉'
-            ];
-            
-            let messageIndex = 0;
-            const loaderText = document.getElementById('loaderText');
-            
-            const messageInterval = setInterval(() => {
-                messageIndex++;
-                if (messageIndex < messages.length) {
-                    loaderText.textContent = messages[messageIndex];
-                } else {
-                    clearInterval(messageInterval);
-                }
-            }, 3000);
-        }
-
         // Handle login
         function handleLogin() {
             const username = document.getElementById('username').value.trim();
@@ -694,12 +601,11 @@
             if (username.toLowerCase() === 'hiba' && password === 'Gul_Hiba') {
                 document.getElementById('loginContainer').style.display = 'none';
                 document.getElementById('loaderContainer').style.display = 'flex';
-                showLoader();
                 
                 setTimeout(() => {
                     document.getElementById('loaderContainer').style.display = 'none';
                     document.getElementById('mainContainer').style.display = 'block';
-                }, 12000);
+                }, 3000);
             } else {
                 document.getElementById('errorMessage').style.display = 'block';
                 setTimeout(() => {
@@ -711,19 +617,25 @@
         // Reveal surprise
         function revealSurprise() {
             const birthdaySection = document.getElementById('birthdaySection');
-            const wishesSection = document.getElementById('wishesSection');
+            const wishesSection1 = document.getElementById('wishesSection1');
             
-            birthdaySection.style.transition = 'opacity 1s ease-out';
+            birthdaySection.style.transition = 'opacity 0.8s';
             birthdaySection.style.opacity = '0';
             
             setTimeout(() => {
                 birthdaySection.style.display = 'none';
-                wishesSection.style.display = 'block';
-                
-                wishesSection.scrollIntoView({ 
-                    behavior: 'smooth' 
-                });
-            }, 1000);
+                wishesSection1.style.display = 'block';
+                wishesSection1.scrollIntoView({ behavior: 'smooth' });
+            }, 800);
+        }
+
+        // Show next wish
+        function showNextWish() {
+            const wishesSection1 = document.getElementById('wishesSection1');
+            const wishesSection2 = document.getElementById('wishesSection2');
+            
+            wishesSection2.style.display = 'block';
+            wishesSection2.scrollIntoView({ behavior: 'smooth' });
         }
 
         // Initialize
