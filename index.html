@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Hiba</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,6 +16,7 @@
         }
 
         body {
+            scroll-behavior: smooth;
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #1a0a1f 0%, #3d1f47 50%, #5c2e5d 100%);
             min-height: 100vh;
@@ -45,12 +49,15 @@
                 transform: translateY(100vh);
                 opacity: 0;
             }
+
             10% {
                 opacity: 1;
             }
+
             90% {
                 opacity: 1;
             }
+
             to {
                 transform: translateY(-100vh);
                 opacity: 0;
@@ -253,8 +260,13 @@
         }
 
         @keyframes spinHeart {
-            0% { transform: translate(-50%, -50%) rotate(0deg); }
-            100% { transform: translate(-50%, -50%) rotate(360deg); }
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
         }
 
         .loader-text {
@@ -352,10 +364,10 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, 
-                rgba(42, 18, 53, 0.75) 0%, 
-                rgba(74, 44, 84, 0.75) 50%, 
-                rgba(107, 61, 107, 0.75) 100%);
+            background: linear-gradient(135deg,
+                    rgba(42, 18, 53, 0.75) 0%,
+                    rgba(74, 44, 84, 0.75) 50%,
+                    rgba(107, 61, 107, 0.75) 100%);
             backdrop-filter: blur(2px);
             z-index: 1;
         }
@@ -426,22 +438,28 @@
             .birthday-title {
                 font-size: 2.8rem;
             }
+
             .birthday-subtitle {
                 font-size: 1.3rem;
             }
+
             .countdown {
                 flex-wrap: wrap;
                 gap: 1rem;
             }
+
             .time-block {
                 min-width: 140px;
             }
+
             .wishes-title {
                 font-size: 2.2rem;
             }
+
             .wishes-text {
                 font-size: 1.3rem;
             }
+
             .special-message {
                 font-size: 1.2rem;
                 padding: 2rem;
@@ -449,6 +467,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Minimal Particles -->
     <div class="particles" id="particles"></div>
@@ -479,7 +498,7 @@
     <!-- Login Form -->
     <div class="login-container" id="loginContainer">
         <div class="login-box">
-            <h2 class="login-title">Welcome</h2>
+            <h2 class="login-title">Welcome Hibaa</h2>
             <div class="input-group">
                 <input type="text" id="username" placeholder="Enter your name" autocomplete="off">
             </div>
@@ -496,7 +515,7 @@
         <div class="loader-animation">
             <div class="spinning-heart"></div>
         </div>
-        <div class="loader-text" id="loaderText">Loading...</div>
+        <div class="loader-text" id="loaderText">Wait a sec Pookiee...</div>
     </div>
 
     <!-- Main Content -->
@@ -505,7 +524,7 @@
         <div class="birthday-section" id="birthdaySection">
             <h1 class="birthday-title">Happy Birthday<br>Hiba</h1>
             <p class="birthday-subtitle">May Allah Pak keep uuh always Smiling🙂</p>
-            <button class="reveal-btn" onclick="revealSurprise()">Punch Meeh</button>
+            <button class="reveal-btn" onclick="revealSurprise()">Click here</button>
         </div>
 
         <!-- Wishes Section 1 -->
@@ -513,15 +532,14 @@
             <div class="wishes-content">
                 <h2 class="wishes-title">Dear Hiba</h2>
                 <p class="wishes-text">
-                    Happy Birthday! Even though we've just started getting to know each other,
-                    I wanted to make this day special for you. May this year bring you endless joy
-                    and beautiful moments to cherish.
+                    Even though we've just met, or Mujhy ap k bary me itna kuch pata b nai, Cuz u always idk shy or
+                    uncomfrotable to share, but yeah! That's fine.
+                    May the new year bring you all the joy, Inshallah that you've ever dreamed of 🙂
                 </p>
                 <div class="special-message">
-                    May all your dreams come true and may you always find reasons to smile.
-                    Here's to new friendships and great memories ahead! 🌸
+                    May all your dreams come true and may you always find reasons to smile 🌸
                 </div>
-                <button class="next-btn" onclick="showNextWish()">Continue</button>
+                <button class="next-btn" onclick="showNextWish()">Continue?</button>
             </div>
         </div>
 
@@ -530,17 +548,27 @@
             <div class="wishes-content">
                 <h2 class="wishes-title">A Special Message</h2>
                 <p class="wishes-text">
-                    Life brings people together for a reason, and meeting you has been one of those
-                    beautiful surprises. Here's to amazing adventures ahead!
+                    Life brings people together for a reason, and meeting you has been one of those idk Maybe?
                 </p>
                 <div class="special-message">
-                    Wishing you endless happiness, success in everything you do,
-                    and beautiful moments that make you smile.
+                    "I wish for all of your wishes to come true.!"
                     <br><br>
                     Happy Birthday! 🎂
                     <br><br>
                     Best wishes,<br>
-                    Badar
+                    <i>Badar</i>
+                </div>
+
+                <div class="poetry-container">
+                    <div class="poetry-line poetry-line-1">
+                        <div><br>
+                            <h4>TBH when i first time seen u <br>Mery dil me ye shayr aya tha</h4><br>
+                        </div>
+                        "Jis bhi Farishte ne teri aankh banai hogi………..🥰
+                    </div>
+                    <div class="poetry-line poetry-line-2">
+                        Hauz-e-Kausar mein kayi baar nahaya hoga…………..🫢"
+                    </div>
                 </div>
             </div>
         </div>
@@ -565,8 +593,8 @@
             const today = new Date();
             const currentMonth = today.getMonth() + 1;
             const currentDate = today.getDate();
-            
-            if (currentMonth === 10 && currentDate === 27) {
+
+            if (currentMonth === 10 && currentDate === 26) {
                 document.getElementById('loginContainer').style.display = 'flex';
                 document.getElementById('countdownContainer').style.display = 'none';
             } else {
@@ -617,20 +645,20 @@
         function handleLogin() {
             const username = document.getElementById('username').value.trim();
             const password = document.getElementById('password').value.trim();
-            
+
             if (username.toLowerCase() === 'hiba' && password === 'Gul_Hiba') {
                 document.getElementById('loginContainer').style.display = 'none';
                 document.getElementById('loaderContainer').style.display = 'flex';
-                
+
                 setTimeout(() => {
                     document.getElementById('loaderContainer').style.display = 'none';
                     document.getElementById('mainContainer').style.display = 'block';
-                }, 3000);
+                }, 6000);
             } else {
                 document.getElementById('errorMessage').style.display = 'block';
                 setTimeout(() => {
                     document.getElementById('errorMessage').style.display = 'none';
-                }, 3000);
+                }, 6000);
             }
         }
 
@@ -638,10 +666,10 @@
         function revealSurprise() {
             const birthdaySection = document.getElementById('birthdaySection');
             const wishesSection1 = document.getElementById('wishesSection1');
-            
+
             birthdaySection.style.transition = 'opacity 0.8s';
             birthdaySection.style.opacity = '0';
-            
+
             setTimeout(() => {
                 birthdaySection.style.display = 'none';
                 wishesSection1.style.display = 'block';
@@ -653,17 +681,17 @@
         function showNextWish() {
             const wishesSection1 = document.getElementById('wishesSection1');
             const wishesSection2 = document.getElementById('wishesSection2');
-            
+
             wishesSection2.style.display = 'block';
             wishesSection2.scrollIntoView({ behavior: 'smooth' });
         }
 
         // Initialize
-        window.onload = function() {
+        window.onload = function () {
             createParticles();
             checkBirthday();
-            
-            document.getElementById('password').addEventListener('keypress', function(e) {
+
+            document.getElementById('password').addEventListener('keypress', function (e) {
                 if (e.key === 'Enter') {
                     handleLogin();
                 }
@@ -671,4 +699,5 @@
         };
     </script>
 </body>
+
 </html>
